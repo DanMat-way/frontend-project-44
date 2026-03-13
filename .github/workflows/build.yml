@@ -7,9 +7,11 @@ on:
     types: [opened, synchronize, reopened]
 jobs:
   build:
-    name: Build and analyze
-    runs-on: ubuntu-latest
-    steps:
+  env:
+      ACTIONS_ALLOW_USE_UNSECURE_NODE_VERSION: true
+      name: Build and analyze
+      runs-on: ubuntu-latest
+  steps:
       - uses: actions/checkout@v4
         with:
           fetch-depth: 0  # Shallow clones should be disabled for a better relevancy of analysis
@@ -25,7 +27,7 @@ jobs:
           key: ${{ runner.os }}-sonar
           restore-keys: ${{ runner.os }}-sonar
       - name: Cache Gradle packages
-        uses: actions/cache@v4
+        uses: actions/checkout@v4
         with:
           path: ~/.gradle/caches
           key: ${{ runner.os }}-gradle-${{ hashFiles('**/*.gradle') }}
@@ -34,4 +36,6 @@ jobs:
         env:
           SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
         run: ./gradlew build sonar --info
+        env:
+        FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
         
