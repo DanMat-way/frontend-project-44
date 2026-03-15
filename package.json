@@ -23,5 +23,8 @@
     "eslint": "^10.0.2",
     "globals": "^17.4.0",
     "prettier": "^3.8.1"
-  }
+  },
+  "bin" : {
+  "brain-games": "bin/brain-games.js"
+}
 }
