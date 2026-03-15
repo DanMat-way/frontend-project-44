@@ -1,0 +1,27 @@
+{
+  "name": "@danmat-way/hexlet-code",
+  "version": "1.0.1",
+  "description": "```bash\r make lint\r ```",
+  "license": "ISC",
+  "author": "",
+  "type": "module",
+  "main": "index.js",
+  "private": false,
+  "scripts": {
+    "start": "node bin/brain-games.js",
+    "format": "prettier --write ."
+  },
+  "dependencies": {
+    "badge-maker": "^5.0.2",
+    "lodash": "^4.17.23",
+    "readline-sync": "^1.4.10"
+  },
+  "devDependencies": {
+    "@eslint/create-config": "^1.11.0",
+    "@eslint/js": "^10.0.1",
+    "@stylistic/eslint-plugin": "^5.9.0",
+    "eslint": "^10.0.2",
+    "globals": "^17.4.0",
+    "prettier": "^3.8.1"
+  }
+}
