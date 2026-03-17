@@ -54,26 +54,19 @@ Let's try again, Daniel!
 ```bash
 brain-calc
 
-May I have your name? Daniel
-Hello, Daniel!
-Question: 17 * 17
-Your answer:
-Wrong answer. The correct answer was 289.
-Let's try again, Daniel!
-PS C:\hexlet-js> brain-calc
 Welcome to the Brain Calc!
 May I have your name? Daniel
 Hello, Daniel!
 Question: 16 + 12
 Your answer: 28
 Correct!
+Question: 17 + 8
 Your answer: 25
 Correct!
 Question: 12 + 20
 Your answer: 32
 Correct!
 Congratulations, Daniel!
-
 
 Welcome to the Brain Calc!
 May I have your name? Daniel
