@@ -19,7 +19,7 @@ make lint-fix
 [![hexlet-check](https://github.com/DanMat-way/frontend-project-44/actions/workflows/hexlet-check.yml/badge.svg)](https://github.com/DanMat-way/frontend-project-44/actions/workflows/hexlet-check.yml)
 
 
-## Пример игры 'Четное или Нечетное' и результат
+## Пример игры 'Четное и Нечетное' и результат
 
 Запустите игру командой:
 
@@ -69,6 +69,16 @@ Correct!
 Congratulations, Daniel!
 
 
+Welcome to the Brain Calc!
+May I have your name? Daniel
+Hello, Daniel!
+Question: 20 * 16
+Your answer: 50
+Wrong answer. The correct answer was 320.
+Let's try again, Daniel!
+
+
+
 ## Пример игры 'НОД'
 
 Запустите игру командой:
@@ -101,10 +111,36 @@ Your answer: 5
 '5' is wrong answer ;(. Correct answer was '9'.
 Let's try again, Daniel!
 
-Welcome to the Brain Calc!
+
+
+
+## Пример игры 'Арифметическая прогрессия'
+
+Запустите игру командой:
+
+```bash
+brain-progression
+
+Welcome to the Brain Progression!
 May I have your name? Daniel
 Hello, Daniel!
-Question: 20 * 16
-Your answer: 50
-Wrong answer. The correct answer was 320.
+What is the next number in the progression?
+Question: 14 16 18 20 22 24 26 ..
+Your answer: 30
+Correct!
+Your answer: 60
+Correct!
+Question: 10 12 14 16 18 20 22 ..
+Your answer: 26
+Correct!
+Congratulations, Daniel!
+
+Welcome to the Brain Progression!
+May I have your name? Daniel
+Hello, Daniel!
+What is the next number in the progression?
+Question: 10 18 26 34 ..
+Your answer: 36
+'36' is wrong answer ;(. Correct answer was '50'.
 Let's try again, Daniel!
+
