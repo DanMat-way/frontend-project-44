@@ -68,6 +68,39 @@ Your answer: 32
 Correct!
 Congratulations, Daniel!
 
+
+## Пример игры "НОД"
+
+Запустите игру командой:
+
+```bash
+brain-gcd
+
+Welcome to the Brain Games!
+May I have your name? Daniel
+Hello, Daniel!
+Find the greatest common divisor of given numbers.
+Question: 13 2
+Your answer: 1
+Correct!       
+Question: 99 76
+Your answer: 1 
+Correct!       
+Question: 42 96
+Your answer: 6 
+Correct!
+Congratulations, Daniel!
+
+
+Welcome to the Brain Games!
+May I have your name? Daniel
+Hello, Daniel!
+Find the greatest common divisor of given numbers.
+Question: 9 90
+Your answer: 5
+'5' is wrong answer ;(. Correct answer was '9'.
+Let's try again, Daniel!
+
 Welcome to the Brain Calc!
 May I have your name? Daniel
 Hello, Daniel!
