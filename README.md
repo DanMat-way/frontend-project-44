@@ -16,5 +16,6 @@ make lint-fix
 [![Actions Status](https://github.com/DanMat-way/frontend-project-44/actions/workflows/hexlet-check.yml/badge.svg)](https://github.com/DanMat-way/frontend-project-44/actions)
 
 ![NPM Version](https://img.shields.io/npm/v/%40danmat-way%2Fhexlet-code)
- 
 
+
+```

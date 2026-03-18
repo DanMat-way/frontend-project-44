@@ -8,8 +8,8 @@
   "main": "index.js",
   "private": false,
   "scripts": {
-    "lint" : "eslint .",
-    "start" : "node bin/brain-games.js",
+    "lint": "eslint .",
+    "start": "node bin/brain-games.js",
     "format": "prettier --write ."
   },
   "dependencies": {
@@ -25,13 +25,12 @@
     "globals": "^17.4.0",
     "prettier": "^3.8.1"
   },
- "bin": {
-  "brain-games": "bin/brain-games.js",
-  "brain-even": "bin/brain-even.js",
-  "brain-calc": "bin/brain-calc.js",
-  "brain-gcd": "bin/brain-gcd.js",
-  "brain-progression": "bin/brain-progression.js",
-  "brain-prime" : "bin/brain-prime.js"
+  "bin": {
+    "brain-games": "bin/brain-games.js",
+    "brain-even": "bin/brain-even.js",
+    "brain-calc": "bin/brain-calc.js",
+    "brain-gcd": "bin/brain-gcd.js",
+    "brain-progression": "bin/brain-progression.js",
+    "brain-prime": "bin/brain-prime.js"
+  }
 }
-}
-

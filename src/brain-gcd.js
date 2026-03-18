@@ -1,4 +1,4 @@
-import readlineSync from 'readline-sync';
+import readlineSync from "readline-sync";
 
 function gcd(a, b) {
   // Алгоритм Евклида
@@ -11,23 +11,27 @@ function gcd(a, b) {
 }
 
 export default function runBrainGcd() {
-  console.log('Welcome to the Brain Games!');
-  const name = readlineSync.question('May I have your name? ');
+  console.log("Welcome to the Brain Games!");
+  const name = readlineSync.question("May I have your name? ");
   console.log(`Hello, ${name}!`);
-  console.log('Find the greatest common divisor of given numbers.');
+  console.log("Find the greatest common divisor of given numbers.");
 
   const rounds = 3;
   for (let i = 0; i < rounds; i++) {
     const num1 = Math.floor(Math.random() * 100) + 1;
     const num2 = Math.floor(Math.random() * 100) + 1;
 
-    const answer = readlineSync.question(`Question: ${num1} ${num2}\nYour answer: `);
+    const answer = readlineSync.question(
+      `Question: ${num1} ${num2}\nYour answer: `,
+    );
     const correctAnswer = gcd(num1, num2).toString();
 
     if (answer.trim() === correctAnswer) {
-      console.log('Correct!');
+      console.log("Correct!");
     } else {
-      console.log(`'${answer.trim()}' is wrong answer ;(. Correct answer was '${correctAnswer}'.`);
+      console.log(
+        `'${answer.trim()}' is wrong answer ;(. Correct answer was '${correctAnswer}'.`,
+      );
       console.log(`Let's try again, ${name}!`);
       return;
     }

@@ -1,10 +1,10 @@
-import readlineSync from 'readline-sync';
+import readlineSync from "readline-sync";
 
 export default function runBrainProgression() {
-  console.log('Welcome to the Brain Progression!');
-  const name = readlineSync.question('May I have your name? ');
+  console.log("Welcome to the Brain Progression!");
+  const name = readlineSync.question("May I have your name? ");
   console.log(`Hello, ${name}!`);
-  console.log('What is the next number in the progression?');
+  console.log("What is the next number in the progression?");
 
   const rounds = 3;
 
@@ -21,14 +21,18 @@ export default function runBrainProgression() {
     }
 
     // заменяем последний элемент на вопрос (пропущенный)
-    sequence[sequence.length - 1] = '..';
+    sequence[sequence.length - 1] = "..";
 
-    const answer = readlineSync.question(`Question: ${sequence.join(' ')}\nYour answer: `);
+    const answer = readlineSync.question(
+      `Question: ${sequence.join(" ")}\nYour answer: `,
+    );
 
     if (answer.trim() === correctAnswer.toString()) {
-      console.log('Correct!');
+      console.log("Correct!");
     } else {
-      console.log(`'${answer.trim()}' is wrong answer ;(. Correct answer was '${correctAnswer}'.`);
+      console.log(
+        `'${answer.trim()}' is wrong answer ;(. Correct answer was '${correctAnswer}'.`,
+      );
       console.log(`Let's try again, ${name}!`);
       return;
     }
@@ -36,4 +40,3 @@ export default function runBrainProgression() {
 
   console.log(`Congratulations, ${name}!`);
 }
-
