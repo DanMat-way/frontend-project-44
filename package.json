@@ -1,13 +1,30 @@
 {
   "name": "@hexlet/code",
   "version": "1.0.2",
-  "description": "",
+  "private": false,
+  "description": "```bash make lint ```",
+  "homepage": "https://github.com/DanMat-way/frontend-project-44#readme",
+  "bugs": {
+    "url": "https://github.com/DanMat-way/frontend-project-44/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DanMat-way/frontend-project-44.git"
+  },
   "license": "ISC",
   "author": "",
   "type": "module",
   "main": "index.js",
-  "private": false,
+  "bin": {
+    "brain-games": "bin/brain-games.js",
+    "brain-even": "bin/brain-even.js",
+    "brain-calc": "bin/brain-calc.js",
+    "brain-gcd": "bin/brain-gcd.js",
+    "brain-progression": "bin/brain-progression.js",
+    "brain-prime": "bin/brain-prime.js"
+  },
   "scripts": {
+    "test": "jest",
     "lint": "eslint .",
     "start": "node bin/brain-games.js",
     "format": "prettier --write ."
@@ -23,14 +40,7 @@
     "@stylistic/eslint-plugin": "^5.9.0",
     "eslint": "^10.0.2",
     "globals": "^17.4.0",
+    "jest": "^30.3.0",
     "prettier": "^3.8.1"
-  },
-  "bin": {
-    "brain-games": "bin/brain-games.js",
-    "brain-even": "bin/brain-even.js",
-    "brain-calc": "bin/brain-calc.js",
-    "brain-gcd": "bin/brain-gcd.js",
-    "brain-progression": "bin/brain-progression.js",
-    "brain-prime": "bin/brain-prime.js"
   }
 }

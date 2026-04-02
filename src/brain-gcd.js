@@ -11,20 +11,20 @@ function gcd(a, b) {
 }
 
 export default function runBrainGcd() {
-  console.log("Welcome to the Brain Games!");
+  console.log("Welcome to the Brain Gcd!");
   const name = readlineSync.question("May I have your name? ");
   console.log(`Hello, ${name}!`);
   console.log("Find the greatest common divisor of given numbers.");
 
   const rounds = 3;
   for (let i = 0; i < rounds; i++) {
-    const num1 = Math.floor(Math.random() * 100) + 1;
-    const num2 = Math.floor(Math.random() * 100) + 1;
+    const randomNumber1 = Math.floor(Math.random() * 100) + 1;
+    const randomNumber2 = Math.floor(Math.random() * 100) + 1;
 
     const answer = readlineSync.question(
-      `Question: ${num1} ${num2}\nYour answer: `,
+      `Question: ${randomNumber1} ${randomNumber2}\nYour answer: `,
     );
-    const correctAnswer = gcd(num1, num2).toString();
+    const correctAnswer = gcd(randomNumber1, randomNumber2).toString();
 
     if (answer.trim() === correctAnswer) {
       console.log("Correct!");
