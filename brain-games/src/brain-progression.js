@@ -1,5 +1,6 @@
 import readlineSync from "readline-sync";
 
+
 export default function runBrainProgression() {
   console.log("Welcome to the Brain Progression!");
   const name = readlineSync.question("May I have your name? ");

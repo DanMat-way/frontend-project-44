@@ -1,6 +1,5 @@
 import readlineSync from "readline-sync";
 
-
 function isPrime(num) { 
 if (num < 2) 
   return false;

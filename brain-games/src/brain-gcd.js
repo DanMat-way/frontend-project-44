@@ -1,5 +1,6 @@
 import readlineSync from "readline-sync";
 
+
 function gcd(a, b) {
   // Алгоритм Евклида
   while (b !== 0) {
