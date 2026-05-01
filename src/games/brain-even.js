@@ -1,29 +1,9 @@
-import readlineSync from "readline-sync";
-import { greetUser, askName, getRandomNumber } from '../utils.js';
+const getQuestionAndAnswer = () => {
+  const number = Math.floor(Math.random() * 100);
+  const question = String(number);
+  const correctAnswer = number % 2 === 0 ? 'yes' : 'no';
 
-function isEven(num) {
-  return num % 2 === 0;
-}
+  return [question, correctAnswer];
+};
 
-export default function runBrainEven() {
-  greetUser();
-  const name = askName();
-  console.log(`Hello, ${name}!`);
-
-  const rounds = 3;
-  for (let i = 0; i < rounds; i++) {
-    const randomNumber = getRandomNumber(1, 100);
-    const answer = readlineSync.question(`Question: ${randomNumber}\nYour answer (yes/no): `);
-    const correctAnswer = isEven(randomNumber) ? 'yes' : 'no';
-
-    if (answer.trim().toLowerCase() === correctAnswer) {
-      console.log('Correct!');
-    } else {
-      console.log(`'${answer.trim()}' is wrong answer ;(. Correct answer was '${correctAnswer}'.`);
-      console.log(`Let's try again, ${name}!`);
-      return;
-    }
-  }
-
-  console.log(`Congratulations, ${name}!`);
-}
+export default getQuestionAndAnswer;
